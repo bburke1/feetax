@@ -1,11 +1,11 @@
 
-const taxRate = 0.27
-const feeRate = 0.15
+const taxRate = 0.15
+const feeRate = 0.1
 const feeMax = 2.00
 
 const getTax = subtotal =>  Math.round(subtotal * taxRate, 2);
-const getFee = subtotal =>
-  subtotal * feeRate < feeMax ? Math.round(subtotal * feeRate, 2) : feeMax;
+
+const getFee = subtotal => subtotal * feeRate < feeMax ? Math.round(subtotal * feeRate, 2) : feeMax;
 
 const strip$ = string => Number(string.substr(1));
 function get$(n) {
