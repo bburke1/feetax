@@ -1,0 +1,84 @@
+body {
+}
+.grid {
+  padding: 32px;
+  display: grid;
+   grid-gap: 16px;
+   grid-template-columns: repeat(auto-fill, 300px);
+}
+.card{
+  width:300px;
+  height:max-content;
+}
+h1.person{
+  font-weight:bold;
+  font-size:1.15rem;
+}
+input.person{
+  font-size:1.15rem;
+  margin-right:16px;
+  height:30px;
+}
+.store{
+  font-style:italic;
+  font-size:1rem;
+}
+.card-header{
+  display:flex;
+}
+.tax-header,.fee-header, .subtotal-header {
+  font-style:italic;
+}
+.tax,.fee, .subtotal {
+  font-style:normal;
+}
+.btn.icon{
+  padding-bottom:0;
+}
+.btn.remove {
+/*   padding:0; */
+  padding: 3px 2px 0 2px;
+  height:32px;
+
+}
+.hide{
+  display:none !important;
+}
+.item .cost.edit{
+  position:absolute;
+  right: 60px;
+}
+
+.add-item {
+  padding: 12px 20px 12px 10px;
+}
+
+.add-item input{
+  margin-right:10px;
+}
+
+.btn.add{
+  padding: 5px 4px 0 4px;
+  height:35px;
+}
+
+button.del{
+  border:none;
+  background-color:transparent;
+  color:#dc3545;
+  position:absolute;
+  padding:0;
+  height:24px;
+  border-radius:15px;
+  left:-15px;
+  top:-15px;
+}
+button.del:hover{
+  color:white;
+  background-color:#e04756;
+/*   #b52b38 */
+}
+
+button.del:focus{
+  outline:none;
+}
